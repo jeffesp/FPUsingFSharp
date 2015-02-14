@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Chapter1.fs" />
     <Compile Include="Chapter2.fs" />
+    <Compile Include="Chapter3.fs" />
     <None Include="Script.fsx" />
   </ItemGroup>
   <PropertyGroup>
