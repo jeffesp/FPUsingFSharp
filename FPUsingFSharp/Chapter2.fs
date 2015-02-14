@@ -78,4 +78,13 @@
     let unVAT percent taxedValue:float = taxedValue / (1.0 + (float(percent)/100.0))
 
     // 2.12
+    // min(f) = n in natural numbers such that f(n) = 0
+    let rec min f =
+        Seq.initInfinite(fun idx -> idx)
+        |> Seq.find(fun x -> f x = 0) 
 
+    // 2.13
+    // curry   : ('a * 'b -> 'c) -> 'a -> 'b -> 'c
+    // uncurry : ('a -> 'b -> 'c) -> 'a * 'b -> 'c
+    let curry f = fun x y -> f(x,y)
+    let uncurry f = fun (x,y) -> f x y
